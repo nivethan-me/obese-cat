@@ -1,46 +1,70 @@
-# Getting Started with Create React App
+# An opinionated CREATE REACT APP with typescript redux toolkit & tailwind
+![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
+![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Jest](https://img.shields.io/badge/-Jest-C21325?logo=jest&logoColor=white&style=for-the-badge)
+<br>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+## Why
+I have created several React apps recently. Setting the configs up is kinda the bottleneck for me to make the ideas simply come true within a very short time.
 
-## Available Scripts
+So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. Feel free to tweak it or even maintains your own forks.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- ⚡️ [React 18](https://beta.reactjs.org/)
+- 🦾 TypeScript, of course
+- 🫀 [Jest](https://jestjs.io/) - unitary testing made easy
+- 🎨 [Tailwind with JIT](https://tailwindcss.com/) - next generation utility-first CSS
+- 🪢 [CSS Modules](https://github.com/css-modules/css-modules)
+- 👑 [Atomic Design organization](https://bradfrost.com/blog/post/atomic-web-design/)
+- 🗂 [Absolute imports](https://github.com/vitejs/vite/issues/88#issuecomment-762415200)
+- 😃 [Hero icons](https://heroicons.com/)
+- ☁️ Deploy on Netlify, zero-config
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Directory Structure
 
-### `npm test`
+`├──`[`.github`](.github) — GitHub configuration including CI/CD workflows<br>
+`├──`[`.vscode`](.vscode) — VSCode settings including code snippets, recommended extensions etc.<br>
+`├──`[`app`](./app) — Web application front-end built with [React](https://reactjs.org/) and [Material UI](https://mui.com/core/)<br>
+`├──`[`edge`](./edge) — Cloudflare Workers (CDN) edge endpoint<br>
+`├──`[`env`](./env) — Application settings, API keys, etc.<br>
+`├──`[`scripts`](./scripts) — Automation scripts such as `yarn deploy`<br>
+`├──`[`tsconfig.base.json`](./tsconfig.base.json) — The common/shared TypeScript configuration<br>
+`└──`[`tsconfig.json`](./tsconfig.json) — The root TypeScript configuration<br>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```diff
++ ├─┬ electron
++ │ ├─┬ main
++ │ │ └── index.ts    entry of Electron-Main
++ │ └─┬ preload
++ │   └── index.ts    entry of Preload-Scripts
+  ├─┬ src
+  │ └── main.ts       entry of Electron-Renderer
+  ├── index.html
+  ├── package.json
+  └── vite.config.ts
+```
+## Getting Started
 
-### `npm run build`
+[Generate](https://github.com/kriasoft/react-starter-kit/generate) a new project
+from this template, clone it, install project dependencies, update the
+environment variables found in [`env/*.env`](./env/), and start hacking:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```
+$ git clone https://github.com/kriasoft/react-starter-kit.git example
+$ cd ./example
+$ yarn install
+$ yarn start
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Scripts
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `yarn start` — Launches the app in development mode on [`http://localhost:5173`](http://localhost:5173/)
+- `yarn build` — Compiles and bundles the app for deployment
+- `yarn lint` — Validate the code using ESLint
+- `yarn tsc` — Validate the code using TypeScript compiler
+- `yarn test` — Run unit tests with Jest, Supertest
+- `yarn edge deploy` — Deploys the app to Cloudflare
