@@ -11,11 +11,14 @@ I have created several React apps recently. Setting the configs up is kinda the 
 
 So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. Feel free to tweak it or even maintains your own forks.
 
-## Features
+## Inspirations
+colocation by kent
 
+## Features
 
 - ⚡️ [React 18](https://beta.reactjs.org/)
 - 🦾 TypeScript, of course
+- 🦾 eslint
 - 🫀 [Jest](https://jestjs.io/) - unitary testing made easy
 - 🎨 [Tailwind with JIT](https://tailwindcss.com/) - next generation utility-first CSS
 - 🪢 [CSS Modules](https://github.com/css-modules/css-modules)
