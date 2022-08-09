@@ -7,9 +7,7 @@
 <br>
 
 ## Why
-I have created several React apps recently. Setting the configs up is kinda the bottleneck for me to make the ideas simply come true within a very short time.
-
-So I made this starter template for myself to create apps more easily, along with some good practices that I have learned from making those apps. Feel free to tweak it or even maintains your own forks.
+ Setting up a React app and running is a time consuming task & making decision with React is even harder, what folder structure to go for ? which library to use for routing? which one for writing css? these are hard questions i faced as a beginner. over the time i gained some tiny knowldge from my work so I created this template which takes all the hard decisions for you on your behalf. Feel free to tweak these template according to your needs.
 
 ## Inspirations
 colocation by kent
@@ -18,7 +16,8 @@ colocation by kent
 
 - ⚡️ [React 18](https://beta.reactjs.org/)
 - 🦾 TypeScript, of course
-- 🦾 eslint
+- 🧹 Eslint with famouse airbnb styles
+- 😎 Git Gook
 - 🫀 [Jest](https://jestjs.io/) - unitary testing made easy
 - 🎨 [Tailwind with JIT](https://tailwindcss.com/) - next generation utility-first CSS
 - 🪢 [CSS Modules](https://github.com/css-modules/css-modules)
