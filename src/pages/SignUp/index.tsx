@@ -1,8 +1,7 @@
-
 function SignUp() {
   return (
     <div>signUp</div>
-  )
+  );
 }
 
-export default SignUp
+export default SignUp;

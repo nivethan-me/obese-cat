@@ -17,6 +17,7 @@ colocation by kent
 - ⚡️ [React 18](https://beta.reactjs.org/)
 - 🦾 TypeScript, of course
 - 🧹 Eslint with famouse airbnb styles
+- 🧗🏻 Different Environment setup for development, production and staging
 - 😎 Git Gook
 - 🫀 [Jest](https://jestjs.io/) - unitary testing made easy
 - 🎨 [Tailwind with JIT](https://tailwindcss.com/) - next generation utility-first CSS

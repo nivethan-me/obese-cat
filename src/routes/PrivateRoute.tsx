@@ -1,9 +1,9 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet } from 'react-router-dom';
 
 function PrivateRoute() {
   return (
-    <Outlet/>
-  )
+    <Outlet />
+  );
 }
 
-export default PrivateRoute
+export default PrivateRoute;
