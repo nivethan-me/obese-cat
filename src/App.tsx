@@ -11,13 +11,14 @@ function App() {
   // TODO check routes with hub
     <Routes>
       <Route element={<PublicRoute />}>
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
+        <Route index element={<SignIn />} />
+        <Route path="signin" element={<SignIn />} />
+        <Route path="signup" element={<SignUp />} />
       </Route>
 
-      <Route path="/" element={<PrivateRoute />}>
-        <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/profile" element={<Profile />} />
+      <Route element={<PrivateRoute />}>
+        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="profile" element={<Profile />} />
       </Route>
     </Routes>
   );
