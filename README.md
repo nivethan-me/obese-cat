@@ -7,7 +7,7 @@
 <br>
 
 ## Why
- Setting up a React app and running is a time consuming task & making decision with React is even harder, what folder structure to go for ? which library to use for routing? which one for writing css? these are hard questions i faced as a beginner. over the time i gained some tiny knowldge from my work so I created this template which takes all the hard decisions for you on your behalf. Feel free to tweak these template according to your needs.
+ Setting up a React app and running is a time consuming task & making decision with React is even harder, what folder structure to go for ? which library to use for routing? which one for writing css? these are hard questions i faced when working with React. over the time i gained bit of knowledge from my work so I created this template which takes all the hard decisions for you on your behalf. Feel free to tweak these template according to your needs.
 
 ## Inspirations
 colocation by kent
@@ -23,9 +23,8 @@ colocation by kent
 - 🎨 [Tailwind with JIT](https://tailwindcss.com/) - next generation utility-first CSS
 - 🪢 [CSS Modules](https://github.com/css-modules/css-modules)
 - 👑 [Atomic Design organization](https://bradfrost.com/blog/post/atomic-web-design/)
+- 👑 [Colocation inspired folder structure](https://bradfrost.com/blog/post/atomic-web-design/)
 - 🗂 [Absolute imports](https://github.com/vitejs/vite/issues/88#issuecomment-762415200)
-- 😃 [Hero icons](https://heroicons.com/)
-- ☁️ Deploy on Netlify, zero-config
 
 ## Directory Structure
 
