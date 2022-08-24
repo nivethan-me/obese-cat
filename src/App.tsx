@@ -5,11 +5,13 @@ import PrivateRoute from 'routes/PrivateRoute';
 import Dashboard from 'pages/Dashboard';
 import Profile from 'pages/Profile';
 import SignIn from 'pages/SignIn';
+import LandingPage from 'pages/landing-page';
 
 function App() {
   return (
   // TODO check routes with hub
     <Routes>
+      <Route index element={<LandingPage />} />
       <Route element={<PublicRoute />}>
         <Route index element={<SignIn />} />
         <Route path="signin" element={<SignIn />} />
