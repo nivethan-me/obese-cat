@@ -1,7 +1,6 @@
-# OBESE CAT - an opinionated CREATE REACT APP with typescript redux toolkit tailwind & more
+# OBESE CAT - An opinionated CRA with TypeScript Redux Toolkit TailwindCSS & more
 ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white&style=for-the-badge)
 ![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
-
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
@@ -24,16 +23,16 @@
 - 🗂 [Absolute imports]() - make the component more readable and clean
 
 
-```
 ## Getting Started
 
-[Generate](https://github.com/sdf/generate) a new project
-from this template, clone it, install project dependencies, update the
-environment variables found in [`env.development`](./env/), and start hacking:
+[Generate](https://github.com/Nivethan-Ar/obese-cat/generate) a new project
+from this template,
+clone it, install project dependencies,
+and start hacking
 
 ```
-$ git clone https://github.com/
-$ cd ./example
+$ git clone https://github.com/Nivethan-Ar/obese-cat.git ./project
+$ cd ./project
 $ npm i
 $ npm run dev
 ```
