@@ -23,47 +23,25 @@
 - 🎨 [Tailwind with JIT](https://tailwindcss.com/) - next generation utility-first CSS
 - 🗂 [Absolute imports]() - make the component more readable and clean
 
-## Directory Structure
 
-`├──`[`.github`](.github) — GitHub configuration including CI/CD workflows<br>
-`├──`[`.vscode`](.vscode) — VSCode settings including code snippets, recommended extensions etc.<br>
-`├──`[`app`](./app) — Web application front-end built with [React](https://reactjs.org/) and [Material UI](https://mui.com/core/)<br>
-`├──`[`edge`](./edge) — Cloudflare Workers (CDN) edge endpoint<br>
-`├──`[`env`](./env) — Application settings, API keys, etc.<br>
-`├──`[`scripts`](./scripts) — Automation scripts such as `yarn deploy`<br>
-`├──`[`tsconfig.base.json`](./tsconfig.base.json) — The common/shared TypeScript configuration<br>
-`└──`[`tsconfig.json`](./tsconfig.json) — The root TypeScript configuration<br>
-
-```diff
-+ ├─┬ electron
-+ │ ├─┬ main
-+ │ │ └── index.ts    entry of Electron-Main
-+ │ └─┬ preload
-+ │   └── index.ts    entry of Preload-Scripts
-  ├─┬ src
-  │ └── main.ts       entry of Electron-Renderer
-  ├── index.html
-  ├── package.json
-  └── vite.config.ts
 ```
 ## Getting Started
 
-[Generate](https://github.com/kriasoft/react-starter-kit/generate) a new project
+[Generate](https://github.com/sdf/generate) a new project
 from this template, clone it, install project dependencies, update the
-environment variables found in [`env/*.env`](./env/), and start hacking:
+environment variables found in [`env.development`](./env/), and start hacking:
 
 ```
-$ git clone https://github.com/kriasoft/react-starter-kit.git example
+$ git clone https://github.com/
 $ cd ./example
-$ yarn install
-$ yarn start
+$ npm i
+$ npm run dev
 ```
 
 ## Scripts
 
-- `yarn start` — Launches the app in development mode on [`http://localhost:5173`](http://localhost:5173/)
-- `yarn build` — Compiles and bundles the app for deployment
-- `yarn lint` — Validate the code using ESLint
-- `yarn tsc` — Validate the code using TypeScript compiler
-- `yarn test` — Run unit tests with Jest, Supertest
-- `yarn edge deploy` — Deploys the app to Cloudflare
+- `npm run dev` — Launches the app in development mode on [`http://localhost:3000`](http://localhost:3000/)
+- `npm run build` — Compiles and bundles the app for deployment
+- `npm run lint` — Validate the code using ESLint
+- `npm run lint:fix` — Validate the code using ESLint and autofix code
+- `npm run test` — Run unit tests with Jest
