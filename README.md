@@ -31,8 +31,8 @@ clone it, install project dependencies,
 and start hacking
 
 ```
-$ git clone https://github.com/Nivethan-Ar/obese-cat.git ./project
-$ cd ./project
+$ git clone https://github.com/Nivethan-Ar/obese-cat.git ./your-project-name
+$ cd ./your-project-name
 $ npm i
 $ npm run dev
 ```
